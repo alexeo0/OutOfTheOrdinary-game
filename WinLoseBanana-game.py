@@ -95,7 +95,7 @@ def f(message):
             bot.reply_to(message, f'Игра началась. В роли банана игрок {banana}. Очередь игрока {names[0]}')
             return
     else:
-        answer = run(iam_token='AQVNxOfWqiNd654V39p-QjdiR7IczE4PTxp1wm4Z', folder_id='b1g7p0kad01qi681gqps', user_text=names[0]+'#'+message.text)
+        answer = run(iam_token='сюда токен', folder_id='токен', user_text=names[0]+'#'+message.text)
         if answer[0] == '%':
             bot.send_message(message.chat.id, f'Я думаю игрок {answer[2:]} это банан')
             if answer[2:] == banana:
